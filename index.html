@@ -77,8 +77,7 @@ h1{font-size:clamp(54px,4.85vw,94px);line-height:.99;font-weight:800;letter-spac
  .process-head{margin-bottom:25px}
  .process h2{font-size:clamp(38px,9vw,56px)}
  .process .subhead{font-size:17px}
- .steps{grid-template-columns:1fr;gap:12px} .step{min-height:0;padding:18px 20px 20px;border-top-width:4px} .step .num{font-size:15px;margin-bottom:10px}
- .step h3{font-size:24px;margin-bottom:8px}
+ .steps{grid-template-columns:1fr;gap:12px} .step{min-height:0;padding:18px 20px 20px;border-top-width:4px} .step .num{font-size:15px;margin-bottom:10px} .step h3{font-size:24px;margin-bottom:8px}
  .step p{font-size:17px}
  .process-foot{padding-top:24px;gap:16px}
  .econ-line{font-size:24px}
@@ -129,7 +128,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
  .card-summary h3{font-size:clamp(24px,7vw,32px);margin:0 20px 9px}
  .card-teaser{font-size:16px;margin:0 20px 14px}
  .more-button{margin:0 20px 19px;font-size:16px}
- .detail-dialog{position:fixed;top:auto;left:2.5vw;right:2.5vw;bottom:2.5vh;width:auto;max-width:none;min-height:72vh;min-height:min(72vh,560px);max-height:94vh;margin:0;padding:24px 18px 28px;border-top-width:7px;transform:none}
+ .detail-dialog{position:fixed;top:auto;left:2.5vw;right:auto;bottom:2.5vh;width:95vw;max-width:95vw;min-height:72vh;min-height:min(72vh,560px);max-height:94vh;margin:0;padding:24px 18px 28px;border-top-width:7px;transform:none}
  .close-detail{font-size:14px;margin:0 0 16px auto}
  .detail-dialog h4{font-size:14px;margin-top:18px}
  .quote-block blockquote{font-size:clamp(21px,5.7vw,28px)}
@@ -157,8 +156,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
 .vision-cta:focus-visible{outline:3px solid var(--paper);outline-offset:4px}
 @media(max-width:900px){.vision-metrics{grid-template-columns:1fr;gap:24px}.vision-metric p{max-width:700px}.vision-footer{margin-top:42px;grid-template-columns:repeat(2,minmax(0,1fr))}.vision-cta{grid-column:1/-1;justify-self:end;width:auto;min-width:min(100%,260px)}}@media(max-width:760px){.vision-slide{padding:38px 22px 28px}.vision-speedlines{width:115vw;height:62vh;height:62svh;left:-18vw;opacity:.38}.vision-kicker{font-size:13px;margin-bottom:18px}.vision-slide h2{font-size:clamp(42px,10vw,66px);margin-bottom:20px}.vision-lead{font-size:20px;line-height:1.42}.vision-metrics{margin-top:34px;gap:20px}.vision-metric{padding-top:14px}.vision-metric h3{font-size:21px;margin-bottom:8px}.vision-metric p{font-size:17px;line-height:1.4}.vision-footer{display:flex;align-items:stretch;flex-direction:column;margin-top:34px;gap:18px}.vision-author strong{font-size:22px}.vision-author span{font-size:15px}.vision-timeline{font-size:15px}.vision-cta{width:100%;min-height:58px}}
 @media(prefers-reduced-motion:reduce){.vision-cta{transition:none}}</style></head>
-<body>
-<section class="cover" aria-labelledby="hero-title">
+<body><section class="cover" aria-labelledby="hero-title">
   <svg class="hero-speedlines" viewBox="0 0 1000 760" preserveAspectRatio="xMaxYMin meet" aria-hidden="true">
   <defs>
     <linearGradient id="speed-yellow" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFCC00" stop-opacity="0"/><stop offset="42%" stop-color="#FFCC00" stop-opacity=".16"/><stop offset="100%" stop-color="#FFCC00" stop-opacity=".9"/></linearGradient>
@@ -237,8 +235,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
             <button class="more-button dialog-trigger" type="button" aria-haspopup="dialog" aria-controls="detail-1">Подробнее <span aria-hidden="true">→</span></button>
           </div>          <dialog class="detail-dialog" id="detail-1" aria-label="Подробности этапа: потребность клиента">
             <button class="close-detail" type="button">Закрыть <span aria-hidden="true">×</span></button>
-            <h4>AI помогает</h4>
-            <p>Собирает запросы, группирует повторяющиеся потребности, выделяет параметры и пробелы, готовит уточняющие вопросы и черновик требований. Клиент или ответственный за продукт подтверждает понимание проблемы.</p>
+            <h4>AI помогает</h4>            <p>Собирает запросы, группирует повторяющиеся потребности, выделяет параметры и пробелы, готовит уточняющие вопросы и черновик требований. Клиент или ответственный за продукт подтверждает понимание проблемы.</p>
             <h4>Экономический эффект</h4>
             <p>Быстрее подготовить предложение; меньше неверных обещаний и переделок.</p>
             <h4>Измерять</h4>
@@ -317,8 +314,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
         <div class="card-inner">          <div class="card-summary">
             <span class="step-index">04</span>
             <svg class="step-icon scene" viewBox="0 0 600 300" role="img" aria-label="Проверка прочности конструкции и сравнение вариантов оптимизации">
-  <g stroke="#171715" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M45 211h304M74 211v-35h244v35" fill="#F6F4EE"/>
+  <g stroke="#171715" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">    <path d="M45 211h304M74 211v-35h244v35" fill="#F6F4EE"/>
     <rect x="129" y="102" width="134" height="73" fill="#fff"/>
     <path d="M151 125h90m-90 22h61" stroke="#A9A396" stroke-width="5"/>
     <path d="M196 52v39m-12-12 12 12 12-12M92 65v36m-12-12 12 12 12-12M300 65v36m-12-12 12 12 12-12" fill="none" stroke="#FFCC00" stroke-width="4"/>
@@ -397,8 +393,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
       <path d="M468 218 683 3" stroke="url(#vision-sand)" stroke-width="1.2"/>
       <path d="M745 518 1000 263" stroke="url(#vision-sand)" stroke-width="1.8"/>
       <path d="M587 174 760 1" stroke="url(#vision-yellow)" stroke-width="1.1"/>
-      <path d="M760 355 1000 115" stroke="url(#vision-sand)" stroke-width="1.2"/>
-      <path d="M680 596 974 302" stroke="url(#vision-yellow)" stroke-width="1.5"/>
+      <path d="M760 355 1000 115" stroke="url(#vision-sand)" stroke-width="1.2"/>      <path d="M680 596 974 302" stroke="url(#vision-yellow)" stroke-width="1.5"/>
       <path d="M405 345 748 2" stroke="url(#vision-sand)" stroke-width="1"/>
       <path d="M828 463 1000 291" stroke="url(#vision-yellow)" stroke-width="1.1"/>
       <path d="M523 467 981 9" stroke="url(#vision-sand)" stroke-width=".9"/>
@@ -477,8 +472,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
 })();
 (function(){
   var words=Array.prototype.slice.call(document.querySelectorAll(".quote-word"));
-  if(!words.length)return;
-  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  if(!words.length)return;  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     words.forEach(function(word){word.classList.add("active");});
     return;
   }
@@ -495,6 +489,5 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
 })();</script>
 </body>
 </html>
-
 
 
