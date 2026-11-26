@@ -77,8 +77,7 @@ h1{font-size:clamp(54px,4.85vw,94px);line-height:.99;font-weight:800;letter-spac
  .process-head{margin-bottom:25px}
  .process h2{font-size:clamp(38px,9vw,56px)}
  .process .subhead{font-size:17px}
- .steps{grid-template-columns:1fr;gap:12px} .step{min-height:0;padding:18px 20px 20px;border-top-width:4px}
- .step .num{font-size:15px;margin-bottom:10px}
+ .steps{grid-template-columns:1fr;gap:12px} .step{min-height:0;padding:18px 20px 20px;border-top-width:4px} .step .num{font-size:15px;margin-bottom:10px}
  .step h3{font-size:24px;margin-bottom:8px}
  .step p{font-size:17px}
  .process-foot{padding-top:24px;gap:16px}
@@ -130,12 +129,12 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
  .card-summary h3{font-size:clamp(24px,7vw,32px);margin:0 20px 9px}
  .card-teaser{font-size:16px;margin:0 20px 14px}
  .more-button{margin:0 20px 19px;font-size:16px}
- .detail-dialog{position:fixed;inset:auto 8px 8px;width:auto;max-width:none;min-height:72vh;min-height:min(72vh,560px);max-height:94vh;margin:0;padding:28px 22px 34px;border-top-width:7px;top:auto;left:auto;transform:none}
- .close-detail{margin:0 0 18px auto}
- .detail-dialog h4{font-size:16px;margin-top:21px}
+ .detail-dialog{position:fixed;top:auto;left:2.5vw;right:2.5vw;bottom:2.5vh;width:auto;max-width:none;min-height:72vh;min-height:min(72vh,560px);max-height:94vh;margin:0;padding:24px 18px 28px;border-top-width:7px;transform:none}
+ .close-detail{font-size:14px;margin:0 0 16px auto}
+ .detail-dialog h4{font-size:14px;margin-top:18px}
  .quote-block blockquote{font-size:clamp(21px,5.7vw,28px)}
  .quote-block figcaption{font-size:11px;line-height:1.5}
- .detail-dialog p{font-size:18px;line-height:1.5}
+ .detail-dialog p{font-size:16px;line-height:1.45}
 }
 @media(prefers-reduced-motion:reduce){.detail-dialog::backdrop{backdrop-filter:none}.quote-word::after{transition:none!important}}.vision-slide{position:relative;isolation:isolate;overflow:hidden;min-height:100vh;min-height:100svh;background:var(--ink);color:var(--paper);padding:clamp(42px,6vw,92px) clamp(24px,7vw,132px) clamp(34px,5vw,74px);display:flex;flex-direction:column}
 .vision-speedlines{position:absolute;z-index:-1;left:0;bottom:0;width:78vw;max-width:1220px;height:78vh;max-height:880px;transform:rotate(180deg);transform-origin:center center;pointer-events:none;opacity:.45;-webkit-mask-image:radial-gradient(ellipse 86% 78% at 0% 100%,#000 5%,transparent 100%);mask-image:radial-gradient(ellipse 86% 78% at 0% 100%,#000 5%,transparent 100%)}
@@ -157,8 +156,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
 .vision-cta:focus{outline:3px solid var(--paper);outline-offset:4px}
 .vision-cta:focus-visible{outline:3px solid var(--paper);outline-offset:4px}
 @media(max-width:900px){.vision-metrics{grid-template-columns:1fr;gap:24px}.vision-metric p{max-width:700px}.vision-footer{margin-top:42px;grid-template-columns:repeat(2,minmax(0,1fr))}.vision-cta{grid-column:1/-1;justify-self:end;width:auto;min-width:min(100%,260px)}}@media(max-width:760px){.vision-slide{padding:38px 22px 28px}.vision-speedlines{width:115vw;height:62vh;height:62svh;left:-18vw;opacity:.38}.vision-kicker{font-size:13px;margin-bottom:18px}.vision-slide h2{font-size:clamp(42px,10vw,66px);margin-bottom:20px}.vision-lead{font-size:20px;line-height:1.42}.vision-metrics{margin-top:34px;gap:20px}.vision-metric{padding-top:14px}.vision-metric h3{font-size:21px;margin-bottom:8px}.vision-metric p{font-size:17px;line-height:1.4}.vision-footer{display:flex;align-items:stretch;flex-direction:column;margin-top:34px;gap:18px}.vision-author strong{font-size:22px}.vision-author span{font-size:15px}.vision-timeline{font-size:15px}.vision-cta{width:100%;min-height:58px}}
-@media(prefers-reduced-motion:reduce){.vision-cta{transition:none}}</style>
-</head>
+@media(prefers-reduced-motion:reduce){.vision-cta{transition:none}}</style></head>
 <body>
 <section class="cover" aria-labelledby="hero-title">
   <svg class="hero-speedlines" viewBox="0 0 1000 760" preserveAspectRatio="xMaxYMin meet" aria-hidden="true">
@@ -237,8 +235,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
 </svg>
             <h3><a class="title-link dialog-trigger" href="#detail-1" aria-haspopup="dialog" aria-controls="detail-1">Потребность клиента</a></h3>            <p class="card-teaser">Запрос → ясное техническое задание</p>
             <button class="more-button dialog-trigger" type="button" aria-haspopup="dialog" aria-controls="detail-1">Подробнее <span aria-hidden="true">→</span></button>
-          </div>
-          <dialog class="detail-dialog" id="detail-1" aria-label="Подробности этапа: потребность клиента">
+          </div>          <dialog class="detail-dialog" id="detail-1" aria-label="Подробности этапа: потребность клиента">
             <button class="close-detail" type="button">Закрыть <span aria-hidden="true">×</span></button>
             <h4>AI помогает</h4>
             <p>Собирает запросы, группирует повторяющиеся потребности, выделяет параметры и пробелы, готовит уточняющие вопросы и черновик требований. Клиент или ответственный за продукт подтверждает понимание проблемы.</p>
@@ -317,8 +314,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
           </dialog>        </div>
       </article>
       <article class="step-card" data-stage="4">
-        <div class="card-inner">
-          <div class="card-summary">
+        <div class="card-inner">          <div class="card-summary">
             <span class="step-index">04</span>
             <svg class="step-icon scene" viewBox="0 0 600 300" role="img" aria-label="Проверка прочности конструкции и сравнение вариантов оптимизации">
   <g stroke="#171715" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
@@ -397,8 +393,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
       <path d="M505 304 808 1" stroke="url(#vision-yellow)" stroke-width="2.2"/>
       <path d="M555 365 920 0" stroke="url(#vision-sand)" stroke-width="1.5"/>
       <path d="M638 390 1000 28" stroke="url(#vision-yellow)" stroke-width="1.7"/>
-      <path d="M620 275 896 0" stroke="url(#vision-sand)" stroke-width="2"/>
-      <path d="M710 456 1000 166" stroke="url(#vision-yellow)" stroke-width="1.3"/>
+      <path d="M620 275 896 0" stroke="url(#vision-sand)" stroke-width="2"/>      <path d="M710 456 1000 166" stroke="url(#vision-yellow)" stroke-width="1.3"/>
       <path d="M468 218 683 3" stroke="url(#vision-sand)" stroke-width="1.2"/>
       <path d="M745 518 1000 263" stroke="url(#vision-sand)" stroke-width="1.8"/>
       <path d="M587 174 760 1" stroke="url(#vision-yellow)" stroke-width="1.1"/>
@@ -477,8 +472,7 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
   document.addEventListener("keydown",function(event){
     if(event.key!=="Escape")return;
     var openFallback=document.querySelector(".detail-dialog[open]");
-    if(openFallback&&typeof openFallback.close==="function")return;
-    if(openFallback){openFallback.removeAttribute("open");document.body.classList.remove("dialog-fallback-open");}
+    if(openFallback&&typeof openFallback.close==="function")return;    if(openFallback){openFallback.removeAttribute("open");document.body.classList.remove("dialog-fallback-open");}
   });
 })();
 (function(){
@@ -501,7 +495,6 @@ body.dialog-fallback-open::before{content:"";position:fixed;z-index:999;inset:0;
 })();</script>
 </body>
 </html>
-
 
 
 
